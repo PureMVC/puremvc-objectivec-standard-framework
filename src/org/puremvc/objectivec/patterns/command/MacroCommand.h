@@ -18,5 +18,6 @@
 
 -(void)initializeMacroCommand;
 -(void)addSubCommand:(Class)commandClassRef;
++(id)command;
 
 @end

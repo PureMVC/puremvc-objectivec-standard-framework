@@ -18,6 +18,10 @@
 @property(nonatomic, retain, getter=getType) NSString *type;
 @property(nonatomic, retain, getter=getBody) id body;
 
++(id)withName:(NSString *)nam;
++(id)withName:(NSString *)name body:(id)body;
++(id)withName:(NSString *)name body:(id)body type:(NSString *)type;
++(id)withName:(NSString *)name type:(NSString *)type;
 -(id)initWithName:(NSString *)name body:(id)body type:(NSString *)type;
 
 @end

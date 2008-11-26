@@ -13,4 +13,6 @@
 @interface SimpleCommand : Notifier <ICommand> {
 }
 
++(id)command;
+
 @end

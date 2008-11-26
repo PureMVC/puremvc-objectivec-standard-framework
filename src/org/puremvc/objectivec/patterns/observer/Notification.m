@@ -13,6 +13,22 @@
 
 @synthesize name, body, type;
 
++(id)withName:(NSString *)name {
+	return [[[self alloc] initWithName:name body:nil type:nil] autorelease];
+}
+
++(id)withName:(NSString *)name body:(id)body {
+	return [[[self alloc] initWithName:name body:body type:nil] autorelease];
+}
+
++(id)withName:(NSString *)name body:(id)body type:(NSString *)type {
+	return [[[self alloc] initWithName:name body:body type:type] autorelease];
+}
+
++(id)withName:(NSString *)name type:(NSString *)type {
+	return [[[self alloc] initWithName:name body:nil type:type] autorelease];
+}
+
 -(id)initWithName:(NSString *)_name body:(id)_body type:(NSString *)_type {
 	if (self = [super init]) {
 		self.name = _name;

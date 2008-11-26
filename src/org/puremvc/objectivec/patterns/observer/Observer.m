@@ -13,6 +13,10 @@
 
 @synthesize notifyMethod, notifyContext;
 
++(id)withNotifyMethod:(SEL)notifyMethod notifyContext:(id)notifyContext {
+	return [[[self alloc] initWithNotifyMethod:notifyMethod notifyContext:notifyContext] autorelease];
+}
+
 -(id)initWithNotifyMethod:(SEL)_notifyMethod notifyContext:(id)_notifyContext {
 	if (self = [super init]) {
 		self.notifyMethod = _notifyMethod;

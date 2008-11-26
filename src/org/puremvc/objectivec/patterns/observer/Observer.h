@@ -17,6 +17,7 @@
 @property SEL notifyMethod;
 @property(nonatomic, retain) id notifyContext;
 
++(id)withNotifyMethod:(SEL)notifyMethod notifyContext:(id)notifyContext;
 -(id)initWithNotifyMethod:(SEL)notifyMethod notifyContext:(id)notifyContext;
 
 @end

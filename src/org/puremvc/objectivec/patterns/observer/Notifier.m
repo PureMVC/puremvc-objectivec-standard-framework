@@ -11,8 +11,34 @@
 
 @implementation Notifier
 
+@synthesize facade;
+
+-(id)init {
+	if (self = [super init]) {
+		self.facade = [Facade getInstance];
+	}
+	return self;
+}
+
+-(void)sendNotification:(NSString *)notificationName {
+	[self sendNotification:notificationName body:nil type:nil];
+}
+
+-(void)sendNotification:(NSString *)notificationName body:(id)body {
+	[self sendNotification:notificationName body:body type:nil];
+}
+
 -(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type {
-	[[Facade getInstance] sendNotification:notificationName body:body type:type];
+	[facade sendNotification:notificationName body:body type:type];
+}
+
+-(void)sendNotification:(NSString *)notificationName type:(NSString *)type {
+	[self sendNotification:notificationName body:nil type:type];
+}
+
+-(void)dealloc {
+	self.facade = nil;
+	[super dealloc];
 }
 
 @end

@@ -8,25 +8,40 @@
 
 #import "Mediator.h"
 
-
 @implementation Mediator
 
 @synthesize mediatorName, viewComponent;
 
--(id)init {
-	if (self = [super init]) {
-		self.mediatorName = @"Mediator";
-	}
-	return self;
++(id)mediator {
+	return [[[self alloc] initWithMediatorName:nil viewComponent:nil] autorelease];
+}
+
++(id)withMediatorName:(NSString *)mediatorName {
+	return [[[self alloc] initWithMediatorName:mediatorName viewComponent:nil] autorelease];
+}
+
++(id)withMediatorName:(NSString *)mediatorName viewComponent:(id)viewComponent {
+	return [[[self alloc] initWithMediatorName:mediatorName viewComponent:viewComponent] autorelease];
+}
+
++(id)withWiewComponent:(id)viewComponent {
+	return [[[self alloc] initWithMediatorName:nil viewComponent:viewComponent] autorelease];
 }
 
 -(id)initWithMediatorName:(NSString *)_mediatorName viewComponent:(id)_viewComponent {
 	if (self = [super init]) {
-		self.mediatorName = _mediatorName;
+		self.mediatorName = (_mediatorName == nil) ? [[self class] NAME] : _mediatorName;
 		self.viewComponent = _viewComponent;
+		[self initializeMediator];
 	}
 	return self;
 }
+
++(NSString *)NAME {
+	return @"Mediator";
+}
+
+-(void)initializeMediator {}
 
 -(void)handleNotification:(id<INotification>)notification {}
 

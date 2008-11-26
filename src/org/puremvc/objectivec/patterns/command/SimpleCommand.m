@@ -11,6 +11,10 @@
 
 @implementation SimpleCommand
 
++(id)command {
+	return [[[self alloc] init] autorelease];
+}
+
 -(void)execute:(id<INotification>)notification {}
 
 @end

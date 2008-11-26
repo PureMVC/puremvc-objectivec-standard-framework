@@ -28,7 +28,7 @@ static id<IView> instance;
 
 +(id<IView>)getInstance {
 	if (instance == nil) {
-		instance = [[View alloc] init];
+		instance = [[self alloc] init];
 	}
 	return instance;
 }
@@ -61,7 +61,7 @@ static id<IView> instance;
 	[mediatorMap setObject:mediator	forKey:[mediator getMediatorName]];
 	NSArray *interests = [mediator listNotificationInterests];
 	if ([interests count] > 0) {
-		id<IObserver> observer = [[Observer alloc] initWithNotifyMethod:@selector(handleNotification:) notifyContext:mediator];
+		id<IObserver> observer = [Observer withNotifyMethod:@selector(handleNotification:) notifyContext:mediator];
 		for (NSString *notificationName in interests) {
 			[self registerObserver:notificationName observer:observer];
 		}

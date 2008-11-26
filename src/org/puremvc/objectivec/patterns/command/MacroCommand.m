@@ -13,6 +13,10 @@
 
 @synthesize subCommands;
 
++(id)command {
+	return [[[self alloc] init] autorelease];
+}
+
 -(id)init {
 	if (self = [super init]) {
 		self.subCommands = [NSMutableArray array];

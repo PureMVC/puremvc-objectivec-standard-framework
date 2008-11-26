@@ -8,25 +8,40 @@
 
 #import "Proxy.h"
 
-
 @implementation Proxy
 
 @synthesize data, proxyName;
 
--(id)init {
-	if (self = [super init]) {
-		self.proxyName = @"Proxy";
-	}
-	return self;
++(id)proxy {
+	return [[[self alloc] initWithProxyName:nil data:nil] autorelease];
+}
+
++(id)withProxyName:(NSString *)proxyName {
+	return [[[self alloc] initWithProxyName:proxyName data:nil] autorelease];
+}
+
++(id)withProxyName:(NSString *)proxyName data:(id)data {
+	return [[[self alloc] initWithProxyName:proxyName data:data] autorelease];
+}
+
++(id)withData:(id)data {
+	return [[[self alloc] initWithProxyName:nil data:data] autorelease];
 }
 
 -(id)initWithProxyName:(NSString *)_proxyName data:(id)_data {
 	if (self = [super init]) {
-		self.proxyName = _proxyName;
+		self.proxyName = (_proxyName == nil) ? [[self class] NAME] : _proxyName;
 		self.data = _data;
+		[self initializeProxy];
 	}
 	return self;
 }
+
++(NSString *)NAME {
+	return @"Proxy";
+}
+
+-(void)initializeProxy {}
 
 -(void)onRegister {}
 -(void)onRemove {}

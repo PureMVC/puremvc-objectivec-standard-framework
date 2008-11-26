@@ -10,7 +10,7 @@
 #import "Interfaces.h"
 #import "Notifier.h"
 
-@interface Mediator : Notifier <IMediator, INotifier> {
+@interface Mediator : Notifier <IMediator> {
 	NSString *mediatorName;
 	id viewComponent;
 }
@@ -18,6 +18,13 @@
 @property(nonatomic, retain, getter=getViewComponent) id viewComponent;
 @property(nonatomic, retain, getter=getMediatorName) NSString *mediatorName;
 
++(id)mediator;
++(id)withMediatorName:(NSString *)mediatorName;
++(id)withMediatorName:(NSString *)mediatorName viewComponent:(id)viewComponent;
++(id)withWiewComponent:(id)viewComponent;
 -(id)initWithMediatorName:(NSString *)mediatorName viewComponent:(id)viewComponent;
+-(void)initializeMediator;
+
++(NSString *)NAME;
 
 @end

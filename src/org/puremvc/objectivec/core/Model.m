@@ -26,7 +26,7 @@ static id<IModel> instance;
 
 +(id<IModel>)getInstance {
 	if (instance == nil) {
-		instance = [[Model alloc] init];
+		instance = [[self alloc] init];
 	}
 	return instance;
 }

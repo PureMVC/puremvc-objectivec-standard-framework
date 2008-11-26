@@ -28,7 +28,7 @@ static id<IController> instance;
 
 +(id<IController>)getInstance {
 	if (instance == nil) {
-		instance = [[Controller alloc] init];
+		instance = [[self alloc] init];
 	}
 	return instance;
 }
@@ -51,8 +51,7 @@ static id<IController> instance;
 
 -(void)registerCommand:(NSString *)notificationName commandClassRef:(Class)commandClassRef {
 	if ([commandMap objectForKey:notificationName] == nil) {
-		id<IObserver> observer = [[[Observer alloc] initWithNotifyMethod:@selector(executeCommand:) notifyContext:self] autorelease];
-		NSLog(@"____________observer = %@", observer);
+		id<IObserver> observer = [Observer withNotifyMethod:@selector(executeCommand:) notifyContext:self];
 		[view registerObserver:notificationName observer:observer];
 	}
 	[commandMap setObject:commandClassRef forKey:notificationName];

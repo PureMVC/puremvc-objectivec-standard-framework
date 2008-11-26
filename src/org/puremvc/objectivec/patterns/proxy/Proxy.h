@@ -18,6 +18,13 @@
 @property(nonatomic, retain, getter=getData) id data;
 @property(nonatomic, retain, getter=getProxyName) NSString *proxyName;
 
++(id)proxy;
++(id)withProxyName:(NSString *)proxyName;
++(id)withProxyName:(NSString *)proxyName data:(id)data;
++(id)withData:(id)data;
 -(id)initWithProxyName:(NSString *)proxyName data:(id)data;
+-(void)initializeProxy;
+
++(NSString *)NAME;
 
 @end

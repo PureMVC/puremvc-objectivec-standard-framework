@@ -29,7 +29,7 @@ static id<IFacade> instance;
 
 +(id<IFacade>)getInstance {
 	if (instance == nil) {
-		instance = [[Facade alloc] init];
+		instance = [[self alloc] init];
 	}
 	return instance;
 }
@@ -55,8 +55,20 @@ static id<IFacade> instance;
 	self.view = [View getInstance];
 }
 
+-(void)sendNotification:(NSString *)notificationName {
+	[self sendNotification:notificationName body:nil type:nil];
+}
+
+-(void)sendNotification:(NSString *)notificationName body:(id)body {
+	[self sendNotification:notificationName body:body type:nil];
+}
+
 -(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type {
-	[self notifyObservers:[[[Notification alloc] initWithName:notificationName body:body type:type] autorelease]];
+	[self notifyObservers:[Notification withName:notificationName body:body type:type]];
+}
+
+-(void)sendNotification:(NSString *)notificationName type:(NSString *)type {
+	[self sendNotification:notificationName body:nil type:type];
 }
 
 -(BOOL)hasCommand:(NSString *)notificationName {
