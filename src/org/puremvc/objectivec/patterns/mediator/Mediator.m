@@ -24,7 +24,7 @@
 	return [[[self alloc] initWithMediatorName:mediatorName viewComponent:viewComponent] autorelease];
 }
 
-+(id)withWiewComponent:(id)viewComponent {
++(id)withViewComponent:(id)viewComponent {
 	return [[[self alloc] initWithMediatorName:nil viewComponent:viewComponent] autorelease];
 }
 

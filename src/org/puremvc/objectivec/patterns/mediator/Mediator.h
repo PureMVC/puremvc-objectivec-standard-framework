@@ -21,7 +21,7 @@
 +(id)mediator;
 +(id)withMediatorName:(NSString *)mediatorName;
 +(id)withMediatorName:(NSString *)mediatorName viewComponent:(id)viewComponent;
-+(id)withWiewComponent:(id)viewComponent;
++(id)withViewComponent:(id)viewComponent;
 -(id)initWithMediatorName:(NSString *)mediatorName viewComponent:(id)viewComponent;
 -(void)initializeMediator;
 
