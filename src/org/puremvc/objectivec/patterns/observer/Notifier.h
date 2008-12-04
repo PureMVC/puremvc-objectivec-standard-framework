@@ -10,10 +10,10 @@
 #import "Interfaces.h"
 
 @interface Notifier : NSObject <INotifier> {
-	id<IFacade> *facade;
+	id<IFacade> facade;
 }
 
-@property(nonatomic, retain) id<IFacade> *facade;
+@property(nonatomic, retain) id<IFacade> facade;
 
 -(void)sendNotification:(NSString *)notificationName;
 -(void)sendNotification:(NSString *)notificationName body:(id)body;

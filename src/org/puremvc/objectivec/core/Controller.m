@@ -67,7 +67,7 @@ static id<IController> instance;
 -(void)dealloc {
 	self.commandMap = nil;
 	self.view = nil;
-	[instance release];
+	[(id)instance release];
 	instance = nil;
 	[super dealloc];
 }

@@ -58,7 +58,7 @@ static id<IModel> instance;
 
 -(void)dealloc {
 	self.proxyMap = nil;
-	[instance release];
+	[(id)instance release];
 	instance = nil;
 	[super dealloc];
 }

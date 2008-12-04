@@ -87,5 +87,5 @@
 -(id<IProxy>)removeProxy:(NSString *)proxyName;
 -(id<IMediator>)retrieveMediator:(NSString *)mediatorName;
 -(id<IProxy>)retrieveProxy:(NSString *)proxyName;
--(void)sendNotification:notificationName body:body type:type;
+-(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type;
 @end
