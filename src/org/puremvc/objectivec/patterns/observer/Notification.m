@@ -38,7 +38,7 @@
 	return self;
 }
 
--(NSString *)toString {
+-(NSString *)description {
 	return [NSString stringWithFormat:@"Notification Name: %@ \nBody:%@ \nType:%@", name, body, type];
 }
 

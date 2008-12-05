@@ -14,7 +14,7 @@
 -(NSString *)getType;
 -(void)setBody:(id)body;
 -(void)setType:(NSString *)type;
--(NSString *)toString;
+-(NSString *)description;
 @end
 
 @protocol IProxy
