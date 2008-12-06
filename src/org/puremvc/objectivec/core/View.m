@@ -86,8 +86,9 @@ static id<IView> instance;
 		for (NSString *notificationName in interests) {
 			[self removeObserver:notificationName notifyContext:mediator];
 		}
-		[mediatorMap removeObjectForKey:mediatorName];
 		[mediator onRemove];
+		[mediatorMap removeObjectForKey:mediatorName];
+		[mediator setViewComponent:nil];
 	}
 	return mediator;
 }

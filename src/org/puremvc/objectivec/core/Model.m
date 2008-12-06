@@ -46,8 +46,8 @@ static id<IModel> instance;
 -(id<IProxy>)removeProxy:(NSString *)proxyName {
 	id<IProxy> proxy = [proxyMap objectForKey:proxyName];
 	if (proxy != nil) {
-		[proxyMap removeObjectForKey:proxyName];
 		[proxy onRemove];
+		[proxyMap removeObjectForKey:proxyName];
 	}
 	return proxy;
 }
