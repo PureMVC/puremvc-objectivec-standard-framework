@@ -15,8 +15,8 @@
 	id viewComponent;
 }
 
-@property(nonatomic, retain, getter=getViewComponent) id viewComponent;
-@property(nonatomic, retain, getter=getMediatorName) NSString *mediatorName;
+@property(nonatomic, retain) id viewComponent;
+@property(nonatomic, retain) NSString *mediatorName;
 
 +(id)mediator;
 +(id)withMediatorName:(NSString *)mediatorName;

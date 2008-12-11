@@ -9,17 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @protocol INotification
--(id)getBody;
--(NSString *)getName;
--(NSString *)getType;
+-(id)body;
+-(NSString *)name;
+-(NSString *)type;
 -(void)setBody:(id)body;
 -(void)setType:(NSString *)type;
 -(NSString *)description;
 @end
 
 @protocol IProxy
--(id)getData;
--(NSString *)getProxyName;
+-(id)data;
+-(NSString *)proxyName;
 -(void)onRegister;
 -(void)onRemove;
 -(void)setData:(id)data;
@@ -37,8 +37,8 @@
 @end
 
 @protocol IMediator
--(NSString *)getMediatorName;
--(id)getViewComponent;
+-(NSString *)mediatorName;
+-(id)viewComponent;
 -(void)handleNotification:(id<INotification>)notification;
 -(NSArray *)listNotificationInterests;
 -(void)onRegister;
@@ -54,6 +54,9 @@
 @end
 
 @protocol INotifier
+-(void)sendNotification:(NSString *)notificationName;
+-(void)sendNotification:(NSString *)notificationName body:(id)body;
+-(void)sendNotification:(NSString *)notificationName type:(NSString *)type;
 -(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type;
 @end
 
@@ -87,5 +90,8 @@
 -(id<IProxy>)removeProxy:(NSString *)proxyName;
 -(id<IMediator>)retrieveMediator:(NSString *)mediatorName;
 -(id<IProxy>)retrieveProxy:(NSString *)proxyName;
+-(void)sendNotification:(NSString *)notificationName;
+-(void)sendNotification:(NSString *)notificationName body:(id)body;
+-(void)sendNotification:(NSString *)notificationName type:(NSString *)type;
 -(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type;
 @end

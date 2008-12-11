@@ -39,7 +39,7 @@ static id<IModel> instance;
 }
 
 -(void)registerProxy:(id<IProxy>)proxy {
-	[proxyMap setObject:proxy forKey:[proxy getProxyName]];
+	[proxyMap setObject:proxy forKey:[proxy proxyName]];
 	[proxy onRegister];
 }
 

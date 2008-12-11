@@ -42,7 +42,7 @@ static id<IView> instance;
 }
 
 -(void)notifyObservers:(id<INotification>)notification {
-	NSMutableArray *observers = [observerMap objectForKey:[notification getName]];
+	NSMutableArray *observers = [observerMap objectForKey:[notification name]];
 	NSMutableArray *workingObservers = [NSMutableArray array];
 	if (observers != nil) {
 		for (id<IObserver> observer in observers) {
@@ -55,10 +55,10 @@ static id<IView> instance;
 }
 
 -(void)registerMediator:(id<IMediator>)mediator {
-	if ([mediatorMap objectForKey:[mediator getMediatorName]] != nil) {
+	if ([mediatorMap objectForKey:[mediator mediatorName]] != nil) {
 		return;
 	}
-	[mediatorMap setObject:mediator	forKey:[mediator getMediatorName]];
+	[mediatorMap setObject:mediator	forKey:[mediator mediatorName]];
 	NSArray *interests = [mediator listNotificationInterests];
 	if ([interests count] > 0) {
 		id<IObserver> observer = [Observer withNotifyMethod:@selector(handleNotification:) notifyContext:mediator];

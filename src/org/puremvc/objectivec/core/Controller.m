@@ -38,7 +38,7 @@ static id<IController> instance;
 }
 
 -(void)executeCommand:(id<INotification>)notification {
-	Class commandClassRef = [commandMap objectForKey:[notification getName]];
+	Class commandClassRef = [commandMap objectForKey:[notification name]];
 	if (commandClassRef == nil) {
 		return;
 	}

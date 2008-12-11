@@ -14,9 +14,9 @@
 	id body;
 }
 
-@property(nonatomic, retain, getter=getName) NSString *name;
-@property(nonatomic, retain, getter=getType) NSString *type;
-@property(nonatomic, retain, getter=getBody) id body;
+@property(nonatomic, retain) NSString *name;
+@property(nonatomic, retain) NSString *type;
+@property(nonatomic, retain) id body;
 
 +(id)withName:(NSString *)nam;
 +(id)withName:(NSString *)name body:(id)body;

@@ -20,9 +20,6 @@
 @property(nonatomic, retain) id<IView> view;
 
 +(id<IFacade>)getInstance;
--(void)sendNotification:(NSString *)notificationName;
--(void)sendNotification:(NSString *)notificationName body:(id)body;
--(void)sendNotification:(NSString *)notificationName type:(NSString *)type;
 -(void)initializeFacade;
 -(void)initializeController;
 -(void)initializeView;

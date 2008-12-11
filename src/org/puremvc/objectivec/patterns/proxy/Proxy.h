@@ -15,8 +15,8 @@
 	NSString *proxyName;
 }
 
-@property(nonatomic, retain, getter=getData) id data;
-@property(nonatomic, retain, getter=getProxyName) NSString *proxyName;
+@property(nonatomic, retain) id data;
+@property(nonatomic, retain) NSString *proxyName;
 
 +(id)proxy;
 +(id)withProxyName:(NSString *)proxyName;
