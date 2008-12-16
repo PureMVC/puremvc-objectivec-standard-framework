@@ -20,16 +20,26 @@
 	return self;
 }
 
+/**
+ * Create and send an <code>INotification</code>.
+ * 
+ * <P>
+ * Keeps us from having to construct new INotification 
+ * instances in our implementation code.
+ * @param notificationName the name of the notiification to send
+ * @param body the body of the notification
+ * @param type the type of the notification
+ */
+-(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type {
+	[facade sendNotification:notificationName body:body type:type];
+}
+
 -(void)sendNotification:(NSString *)notificationName {
 	[self sendNotification:notificationName body:nil type:nil];
 }
 
 -(void)sendNotification:(NSString *)notificationName body:(id)body {
 	[self sendNotification:notificationName body:body type:nil];
-}
-
--(void)sendNotification:(NSString *)notificationName body:(id)body type:(NSString *)type {
-	[facade sendNotification:notificationName body:body type:type];
 }
 
 -(void)sendNotification:(NSString *)notificationName type:(NSString *)type {

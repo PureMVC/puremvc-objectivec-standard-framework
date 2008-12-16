@@ -41,9 +41,27 @@
 	return @"Proxy";
 }
 
+/**
+ * Initialize the Proxy instance.
+ * 
+ * <P>
+ * Called automatically by the constructor, this
+ * is your opportunity to initialize the Proxy
+ * instance in your subclass without overriding the
+ * constructor.</P>
+ * 
+ * @return void
+ */
 -(void)initializeProxy {}
 
+/**
+ * Called by the Model when the Proxy is registered
+ */ 
 -(void)onRegister {}
+
+/**
+ * Called by the Model when the Proxy is removed
+ */ 
 -(void)onRemove {}
 
 -(void)dealloc {

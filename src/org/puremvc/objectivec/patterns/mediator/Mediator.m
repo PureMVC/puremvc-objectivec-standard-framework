@@ -37,20 +37,59 @@
 	return self;
 }
 
+/**
+ * The name of the <code>Mediator</code>. 
+ * 
+ * <P>
+ * Typically, a <code>Mediator</code> will be written to serve
+ * one specific control or group controls and so,
+ * will not have a need to be dynamically named.</P>
+ */
 +(NSString *)NAME {
 	return @"Mediator";
 }
 
+/**
+ * Initialize the Mediator instance.
+ * 
+ * <P>
+ * Called automatically by the constructor, this
+ * is your opportunity to initialize the Mediator
+ * instance in your subclass without overriding the
+ * constructor.</P>
+ * 
+ * @return void
+ */
 -(void)initializeMediator {}
 
+/**
+ * Handle <code>INotification</code>s.
+ * 
+ * <P>
+ * Typically this will be handled in a switch statement,
+ * with one 'case' entry per <code>INotification</code>
+ * the <code>Mediator</code> is interested in.
+ */
 -(void)handleNotification:(id<INotification>)notification {}
 
+/**
+ * List the <code>INotification</code> names this
+ * <code>Mediator</code> is interested in being notified of.
+ * 
+ * @return Array the list of <code>INotification</code> names 
+ */
 -(NSArray *)listNotificationInterests {
 	return [NSArray array];
 }
 
+/**
+ * Called by the View when the Mediator is registered
+ */ 
 -(void)onRegister {}
 
+/**
+ * Called by the View when the Mediator is removed
+ */ 
 -(void)onRemove {}
 
 -(void)dealloc {

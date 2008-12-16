@@ -7,8 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Interfaces.h"
+#import "IObserver.h"
 
+/**
+ * A base <code>IObserver</code> implementation.
+ * 
+ * <P> 
+ * An <code>Observer</code> is an object that encapsulates information
+ * about an interested object with a method that should 
+ * be called when a particular <code>INotification</code> is broadcast. </P>
+ * 
+ * <P>
+ * In PureMVC, the <code>Observer</code> class assumes these responsibilities:
+ * <UL>
+ * <LI>Encapsulate the notification (callback) method of the interested object.</LI>
+ * <LI>Encapsulate the notification context (this) of the interested object.</LI>
+ * <LI>Provide methods for setting the notification method and context.</LI>
+ * <LI>Provide a method for notifying the interested object.</LI>
+ * </UL>
+ * 
+ * @see View, Notification
+ */
 @interface Observer : NSObject <IObserver> {
 	SEL notifyMethod;
 	id notifyContext;

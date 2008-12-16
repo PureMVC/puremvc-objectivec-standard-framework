@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Interfaces.h"
+#import "IMediator.h"
 #import "Notifier.h"
 
+/**
+ * A base <code>IMediator</code> implementation. 
+ * 
+ * @see View
+ */
 @interface Mediator : Notifier <IMediator> {
 	NSString *mediatorName;
 	id viewComponent;
