@@ -1,0 +1,40 @@
+Installation
+
+Download the latest version of the Framework distribution and unzip to a directory on your system, such as
+
+    ~/Dev
+
+This will create a folder like this
+
+    ~/Dev/PureMVC_ObjectiveC_X_Y
+
+Where X_Y is the framework version number.
+
+Inside you will find
+
+    * The API documentation: doc/html/index.html
+    * The source code: src/org/puremvc/objectivec/...
+    * The static library for use with iphone/ipod XCode projects: bin/PureMVC/PureMVC_ObjectiveC_X_Y.a
+    * The header files for use with the static library in your iphone/ipod XCode projects: bin/PureMVC/headers
+
+
+To add the PureMVC static library and headers to your XCode project:
+
+From the Groups & Files pane, right click on the Frameworks Folder and select
+
+    Add -> Existing Files...
+
+Browse and Add
+
+    ~/Dev/PureMVC_ObjectiveC_X_Y/bin/PureMVC/PureMVC_ObjectiveC_X_Y.a
+    
+For each target you added it too you should see the static library (.a) listed under their respective folder, Link Binary With Libraries
+
+From the Groups & Files pane, double click the respective target or right click and select, Get Info, and then click on the Build tab.
+
+Under the setting, Header Search Paths, add "~/Dev/PureMVC_ObjectiveC_X_Y/bin/PureMVC/headers"
+
+Now you are good to code!
+
+
+Note: The static library has been compiled for the both the simulator and the device 
