@@ -20,7 +20,7 @@ Inside you will find
 
 To add the PureMVC static library and headers to your XCode project:
 
-From the Groups & Files pane, right click on the Frameworks Folder and select
+From the Groups & Files pane, right click on the Frameworks (if it exists) folder or the Link Binary With Libraries folder and select
 
     Add -> Existing Files...
 
@@ -28,7 +28,7 @@ Browse and Add
 
     ~/Dev/PureMVC_ObjectiveC_X_Y/bin/PureMVC/PureMVC_ObjectiveC_X_Y.a
     
-For each target you added it too you should see the static library (.a) listed under their respective folder, Link Binary With Libraries
+For each target you added it too you should see the static library (.a) listed in the folder, Link Binary With Libraries
 
 From the Groups & Files pane, double click the respective target or right click and select, Get Info, and then click on the Build tab.
 
