@@ -28,7 +28,7 @@ Browse and Add
 
     ~/Dev/PureMVC_ObjectiveC_X_Y/bin/PureMVC/PureMVC_ObjectiveC_X_Y.a
     
-For each target you added it too you should see the static library (.a) listed in the folder, Link Binary With Libraries
+For each target you added it too, you should see the static library (.a) listed in the Link Binary With Libraries folder
 
 From the Groups & Files pane, double click the respective target or right click and select, Get Info, and then click on the Build tab.
 
@@ -37,4 +37,4 @@ Under the setting, Header Search Paths, add "~/Dev/PureMVC_ObjectiveC_X_Y/bin/Pu
 Now you are good to code!
 
 
-Note: The static library has been compiled for the both the simulator and the device 
+Note: The static library has been compiled for the both the simulator and the device.
