@@ -8,10 +8,8 @@ Release Date: 1/14/09
       Author: Brian Knorr <brian.knorr@puremvc.org>
      License: Creative Commons Attribution 3.0 Unported License
 --------------------------------------------------------------------------
-1.0 - This is the first major release of the PureMVC Port to ObjectiveC.  
-      It was written to spec and unit tested based on AS3's version 2.0.4, 
-      and has been functionally tested on the iphone via the Employee Admin 
-      demo and in my company's soon-to-be-released iphone apps.  No 
-      functional testing has been conducted yet for mac desktop. - BTK
+1.1 - Updated to compile against iphone 3.0 SDK.  Small bug fix on removeMediator. - BTK
+
+1.0 - This is the first major release of the PureMVC Port to ObjectiveC.  It was written to spec and unit tested based on AS3's version 2.0.4, and has been functionally tested on the iphone via the Employee Admin demo and in my company's soon-to-be-released iphone apps.  No functional testing has been conducted yet for mac desktop. - BTK
 
 0.1 - Initial repo with license.txt, version.txt, and package folders. - CLH

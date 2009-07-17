@@ -159,8 +159,8 @@ static id<IView> instance;
 			[self removeObserver:notificationName notifyContext:mediator];
 		}
 		[mediator onRemove];
-		[mediatorMap removeObjectForKey:mediatorName];
 		[mediator setViewComponent:nil];
+		[mediatorMap removeObjectForKey:mediatorName];
 	}
 	return mediator;
 }
