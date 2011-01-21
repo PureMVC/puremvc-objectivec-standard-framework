@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40C7CDFB12EA113E003FF22C /* Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDD412EA113E003FF22C /* Controller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CDFC12EA113E003FF22C /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDD512EA113E003FF22C /* Controller.m */; };
+		40C7CDFD12EA113E003FF22C /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDD612EA113E003FF22C /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CDFE12EA113E003FF22C /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDD712EA113E003FF22C /* Model.m */; };
+		40C7CDFF12EA113E003FF22C /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDD812EA113E003FF22C /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0012EA113E003FF22C /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDD912EA113E003FF22C /* View.m */; };
+		40C7CE0112EA113E003FF22C /* ICommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDDB12EA113E003FF22C /* ICommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0212EA113E003FF22C /* IController.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDDC12EA113E003FF22C /* IController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0312EA113E003FF22C /* IFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDDD12EA113E003FF22C /* IFacade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0412EA113E003FF22C /* IMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDDE12EA113E003FF22C /* IMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0512EA113E003FF22C /* IModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDDF12EA113E003FF22C /* IModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0612EA113E003FF22C /* INotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE012EA113E003FF22C /* INotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0712EA113E003FF22C /* INotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE112EA113E003FF22C /* INotifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0812EA113E003FF22C /* IObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE212EA113E003FF22C /* IObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0912EA113E003FF22C /* IProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE312EA113E003FF22C /* IProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0A12EA113E003FF22C /* IView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE412EA113E003FF22C /* IView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0B12EA113E003FF22C /* MacroCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE712EA113E003FF22C /* MacroCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0C12EA113E003FF22C /* MacroCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDE812EA113E003FF22C /* MacroCommand.m */; };
+		40C7CE0D12EA113E003FF22C /* SimpleCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDE912EA113E003FF22C /* SimpleCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE0E12EA113E003FF22C /* SimpleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDEA12EA113E003FF22C /* SimpleCommand.m */; };
+		40C7CE0F12EA113E003FF22C /* Facade.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDEC12EA113E003FF22C /* Facade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE1012EA113E003FF22C /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDED12EA113E003FF22C /* Facade.m */; };
+		40C7CE1112EA113E003FF22C /* Mediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDEF12EA113E003FF22C /* Mediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE1212EA113E003FF22C /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDF012EA113E003FF22C /* Mediator.m */; };
+		40C7CE1312EA113E003FF22C /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDF212EA113E003FF22C /* Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE1412EA113E003FF22C /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDF312EA113E003FF22C /* Notification.m */; };
+		40C7CE1512EA113E003FF22C /* Notifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDF412EA113E003FF22C /* Notifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE1612EA113E003FF22C /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDF512EA113E003FF22C /* Notifier.m */; };
+		40C7CE1712EA113E003FF22C /* Observer.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDF612EA113E003FF22C /* Observer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE1812EA113E003FF22C /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDF712EA113E003FF22C /* Observer.m */; };
+		40C7CE1912EA113E003FF22C /* Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C7CDF912EA113E003FF22C /* Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7CE1A12EA113E003FF22C /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7CDFA12EA113E003FF22C /* Proxy.m */; };
+		AA747D9F0F9514B9006C5449 /* PureMVC_ObjectiveC_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* PureMVC_ObjectiveC_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40C7CDD412EA113E003FF22C /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = src/org/puremvc/objectivec/core/Controller.h; sourceTree = SOURCE_ROOT; };
+		40C7CDD512EA113E003FF22C /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Controller.m; path = src/org/puremvc/objectivec/core/Controller.m; sourceTree = SOURCE_ROOT; };
+		40C7CDD612EA113E003FF22C /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = src/org/puremvc/objectivec/core/Model.h; sourceTree = SOURCE_ROOT; };
+		40C7CDD712EA113E003FF22C /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = src/org/puremvc/objectivec/core/Model.m; sourceTree = SOURCE_ROOT; };
+		40C7CDD812EA113E003FF22C /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = View.h; path = src/org/puremvc/objectivec/core/View.h; sourceTree = SOURCE_ROOT; };
+		40C7CDD912EA113E003FF22C /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = View.m; path = src/org/puremvc/objectivec/core/View.m; sourceTree = SOURCE_ROOT; };
+		40C7CDDB12EA113E003FF22C /* ICommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ICommand.h; path = src/org/puremvc/objectivec/interfaces/ICommand.h; sourceTree = SOURCE_ROOT; };
+		40C7CDDC12EA113E003FF22C /* IController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IController.h; path = src/org/puremvc/objectivec/interfaces/IController.h; sourceTree = SOURCE_ROOT; };
+		40C7CDDD12EA113E003FF22C /* IFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFacade.h; path = src/org/puremvc/objectivec/interfaces/IFacade.h; sourceTree = SOURCE_ROOT; };
+		40C7CDDE12EA113E003FF22C /* IMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMediator.h; path = src/org/puremvc/objectivec/interfaces/IMediator.h; sourceTree = SOURCE_ROOT; };
+		40C7CDDF12EA113E003FF22C /* IModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IModel.h; path = src/org/puremvc/objectivec/interfaces/IModel.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE012EA113E003FF22C /* INotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotification.h; path = src/org/puremvc/objectivec/interfaces/INotification.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE112EA113E003FF22C /* INotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotifier.h; path = src/org/puremvc/objectivec/interfaces/INotifier.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE212EA113E003FF22C /* IObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IObserver.h; path = src/org/puremvc/objectivec/interfaces/IObserver.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE312EA113E003FF22C /* IProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IProxy.h; path = src/org/puremvc/objectivec/interfaces/IProxy.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE412EA113E003FF22C /* IView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IView.h; path = src/org/puremvc/objectivec/interfaces/IView.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE712EA113E003FF22C /* MacroCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroCommand.h; path = src/org/puremvc/objectivec/patterns/command/MacroCommand.h; sourceTree = SOURCE_ROOT; };
+		40C7CDE812EA113E003FF22C /* MacroCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MacroCommand.m; path = src/org/puremvc/objectivec/patterns/command/MacroCommand.m; sourceTree = SOURCE_ROOT; };
+		40C7CDE912EA113E003FF22C /* SimpleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCommand.h; path = src/org/puremvc/objectivec/patterns/command/SimpleCommand.h; sourceTree = SOURCE_ROOT; };
+		40C7CDEA12EA113E003FF22C /* SimpleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleCommand.m; path = src/org/puremvc/objectivec/patterns/command/SimpleCommand.m; sourceTree = SOURCE_ROOT; };
+		40C7CDEC12EA113E003FF22C /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = src/org/puremvc/objectivec/patterns/facade/Facade.h; sourceTree = SOURCE_ROOT; };
+		40C7CDED12EA113E003FF22C /* Facade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facade.m; path = src/org/puremvc/objectivec/patterns/facade/Facade.m; sourceTree = SOURCE_ROOT; };
+		40C7CDEF12EA113E003FF22C /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mediator.h; path = src/org/puremvc/objectivec/patterns/mediator/Mediator.h; sourceTree = SOURCE_ROOT; };
+		40C7CDF012EA113E003FF22C /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mediator.m; path = src/org/puremvc/objectivec/patterns/mediator/Mediator.m; sourceTree = SOURCE_ROOT; };
+		40C7CDF212EA113E003FF22C /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notification.h; path = src/org/puremvc/objectivec/patterns/observer/Notification.h; sourceTree = SOURCE_ROOT; };
+		40C7CDF312EA113E003FF22C /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notification.m; path = src/org/puremvc/objectivec/patterns/observer/Notification.m; sourceTree = SOURCE_ROOT; };
+		40C7CDF412EA113E003FF22C /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notifier.h; path = src/org/puremvc/objectivec/patterns/observer/Notifier.h; sourceTree = SOURCE_ROOT; };
+		40C7CDF512EA113E003FF22C /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notifier.m; path = src/org/puremvc/objectivec/patterns/observer/Notifier.m; sourceTree = SOURCE_ROOT; };
+		40C7CDF612EA113E003FF22C /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Observer.h; path = src/org/puremvc/objectivec/patterns/observer/Observer.h; sourceTree = SOURCE_ROOT; };
+		40C7CDF712EA113E003FF22C /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Observer.m; path = src/org/puremvc/objectivec/patterns/observer/Observer.m; sourceTree = SOURCE_ROOT; };
+		40C7CDF912EA113E003FF22C /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Proxy.h; path = src/org/puremvc/objectivec/patterns/proxy/Proxy.h; sourceTree = SOURCE_ROOT; };
+		40C7CDFA12EA113E003FF22C /* Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Proxy.m; path = src/org/puremvc/objectivec/patterns/proxy/Proxy.m; sourceTree = SOURCE_ROOT; };
+		AA747D9E0F9514B9006C5449 /* PureMVC_ObjectiveC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureMVC_ObjectiveC_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libPureMVC_ObjectiveC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPureMVC_ObjectiveC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libPureMVC_ObjectiveC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* PureMVC_ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = PureMVC_ObjectiveC;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDD012EA113E003FF22C /* org */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* PureMVC_ObjectiveC_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		40C7CDD012EA113E003FF22C /* org */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDD112EA113E003FF22C /* puremvc */,
+			);
+			name = org;
+			path = src/org;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDD112EA113E003FF22C /* puremvc */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDD212EA113E003FF22C /* objectivec */,
+			);
+			name = puremvc;
+			path = src/org/puremvc;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDD212EA113E003FF22C /* objectivec */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDD312EA113E003FF22C /* core */,
+				40C7CDDA12EA113E003FF22C /* interfaces */,
+				40C7CDE512EA113E003FF22C /* patterns */,
+			);
+			name = objectivec;
+			path = src/org/puremvc/objectivec;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDD312EA113E003FF22C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDD412EA113E003FF22C /* Controller.h */,
+				40C7CDD512EA113E003FF22C /* Controller.m */,
+				40C7CDD612EA113E003FF22C /* Model.h */,
+				40C7CDD712EA113E003FF22C /* Model.m */,
+				40C7CDD812EA113E003FF22C /* View.h */,
+				40C7CDD912EA113E003FF22C /* View.m */,
+			);
+			name = core;
+			path = src/org/puremvc/objectivec/core;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDDA12EA113E003FF22C /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDDB12EA113E003FF22C /* ICommand.h */,
+				40C7CDDC12EA113E003FF22C /* IController.h */,
+				40C7CDDD12EA113E003FF22C /* IFacade.h */,
+				40C7CDDE12EA113E003FF22C /* IMediator.h */,
+				40C7CDDF12EA113E003FF22C /* IModel.h */,
+				40C7CDE012EA113E003FF22C /* INotification.h */,
+				40C7CDE112EA113E003FF22C /* INotifier.h */,
+				40C7CDE212EA113E003FF22C /* IObserver.h */,
+				40C7CDE312EA113E003FF22C /* IProxy.h */,
+				40C7CDE412EA113E003FF22C /* IView.h */,
+			);
+			name = interfaces;
+			path = src/org/puremvc/objectivec/interfaces;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDE512EA113E003FF22C /* patterns */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDE612EA113E003FF22C /* command */,
+				40C7CDEB12EA113E003FF22C /* facade */,
+				40C7CDEE12EA113E003FF22C /* mediator */,
+				40C7CDF112EA113E003FF22C /* observer */,
+				40C7CDF812EA113E003FF22C /* proxy */,
+			);
+			name = patterns;
+			path = src/org/puremvc/objectivec/patterns;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDE612EA113E003FF22C /* command */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDE712EA113E003FF22C /* MacroCommand.h */,
+				40C7CDE812EA113E003FF22C /* MacroCommand.m */,
+				40C7CDE912EA113E003FF22C /* SimpleCommand.h */,
+				40C7CDEA12EA113E003FF22C /* SimpleCommand.m */,
+			);
+			name = command;
+			path = src/org/puremvc/objectivec/patterns/command;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDEB12EA113E003FF22C /* facade */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDEC12EA113E003FF22C /* Facade.h */,
+				40C7CDED12EA113E003FF22C /* Facade.m */,
+			);
+			name = facade;
+			path = src/org/puremvc/objectivec/patterns/facade;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDEE12EA113E003FF22C /* mediator */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDEF12EA113E003FF22C /* Mediator.h */,
+				40C7CDF012EA113E003FF22C /* Mediator.m */,
+			);
+			name = mediator;
+			path = src/org/puremvc/objectivec/patterns/mediator;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDF112EA113E003FF22C /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDF212EA113E003FF22C /* Notification.h */,
+				40C7CDF312EA113E003FF22C /* Notification.m */,
+				40C7CDF412EA113E003FF22C /* Notifier.h */,
+				40C7CDF512EA113E003FF22C /* Notifier.m */,
+				40C7CDF612EA113E003FF22C /* Observer.h */,
+				40C7CDF712EA113E003FF22C /* Observer.m */,
+			);
+			name = observer;
+			path = src/org/puremvc/objectivec/patterns/observer;
+			sourceTree = SOURCE_ROOT;
+		};
+		40C7CDF812EA113E003FF22C /* proxy */ = {
+			isa = PBXGroup;
+			children = (
+				40C7CDF912EA113E003FF22C /* Proxy.h */,
+				40C7CDFA12EA113E003FF22C /* Proxy.m */,
+			);
+			name = proxy;
+			path = src/org/puremvc/objectivec/patterns/proxy;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* PureMVC_ObjectiveC_Prefix.pch in Headers */,
+				40C7CDFB12EA113E003FF22C /* Controller.h in Headers */,
+				40C7CDFD12EA113E003FF22C /* Model.h in Headers */,
+				40C7CDFF12EA113E003FF22C /* View.h in Headers */,
+				40C7CE0112EA113E003FF22C /* ICommand.h in Headers */,
+				40C7CE0212EA113E003FF22C /* IController.h in Headers */,
+				40C7CE0312EA113E003FF22C /* IFacade.h in Headers */,
+				40C7CE0412EA113E003FF22C /* IMediator.h in Headers */,
+				40C7CE0512EA113E003FF22C /* IModel.h in Headers */,
+				40C7CE0612EA113E003FF22C /* INotification.h in Headers */,
+				40C7CE0712EA113E003FF22C /* INotifier.h in Headers */,
+				40C7CE0812EA113E003FF22C /* IObserver.h in Headers */,
+				40C7CE0912EA113E003FF22C /* IProxy.h in Headers */,
+				40C7CE0A12EA113E003FF22C /* IView.h in Headers */,
+				40C7CE0B12EA113E003FF22C /* MacroCommand.h in Headers */,
+				40C7CE0D12EA113E003FF22C /* SimpleCommand.h in Headers */,
+				40C7CE0F12EA113E003FF22C /* Facade.h in Headers */,
+				40C7CE1112EA113E003FF22C /* Mediator.h in Headers */,
+				40C7CE1312EA113E003FF22C /* Notification.h in Headers */,
+				40C7CE1512EA113E003FF22C /* Notifier.h in Headers */,
+				40C7CE1712EA113E003FF22C /* Observer.h in Headers */,
+				40C7CE1912EA113E003FF22C /* Proxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* PureMVC_ObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "PureMVC_ObjectiveC" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureMVC_ObjectiveC;
+			productName = PureMVC_ObjectiveC;
+			productReference = D2AAC07E0554694100DB518D /* libPureMVC_ObjectiveC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PureMVC_ObjectiveC" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* PureMVC_ObjectiveC */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* PureMVC_ObjectiveC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C7CDFC12EA113E003FF22C /* Controller.m in Sources */,
+				40C7CDFE12EA113E003FF22C /* Model.m in Sources */,
+				40C7CE0012EA113E003FF22C /* View.m in Sources */,
+				40C7CE0C12EA113E003FF22C /* MacroCommand.m in Sources */,
+				40C7CE0E12EA113E003FF22C /* SimpleCommand.m in Sources */,
+				40C7CE1012EA113E003FF22C /* Facade.m in Sources */,
+				40C7CE1212EA113E003FF22C /* Mediator.m in Sources */,
+				40C7CE1412EA113E003FF22C /* Notification.m in Sources */,
+				40C7CE1612EA113E003FF22C /* Notifier.m in Sources */,
+				40C7CE1812EA113E003FF22C /* Observer.m in Sources */,
+				40C7CE1A12EA113E003FF22C /* Proxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/PureMVC_ObjectiveC.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PureMVC_ObjectiveC_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = PureMVC_ObjectiveC;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../headers;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/PureMVC_ObjectiveC.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PureMVC_ObjectiveC_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PRODUCT_NAME = PureMVC_ObjectiveC;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../headers;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "PureMVC_ObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "PureMVC_ObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
