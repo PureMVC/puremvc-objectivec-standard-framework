@@ -16,7 +16,7 @@ Production - [Version 1.1](https://github.com/PureMVC/puremvc-objectivec-standar
 * [Objective C](http://en.wikipedia.org/wiki/Objective_c)
 
 ## License
-*PureMVC Standard Framework for ObjectiveC (Ported) - Copyright © 2009 Brian Knorr  
+* PureMVC Standard Framework for ObjectiveC (Ported) - Copyright © 2009 Brian Knorr  
 * PureMVC - Copyright © 2006-2012 Futurescale, Inc.
 * All rights reserved.
 
