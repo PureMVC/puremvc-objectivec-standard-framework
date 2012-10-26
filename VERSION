@@ -1,12 +1,10 @@
-PureMVC Port to ObjectiveC by Brian Knorr <brian.knorr@puremvc.org>
-PureMVC - Copyright(c) 2006-2008 Futurescale, Inc., Some rights reserved.
+PureMVC Standard Framework for ObjectiveC (Ported)
 --------------------------------------------------------------------------
 Release Date: 1/19/09
     Platform: Objective C 
      Version: 1 
     Revision: 1
       Author: Brian Knorr <brian.knorr@puremvc.org>
-     License: Creative Commons Attribution 3.0 Unported License
 --------------------------------------------------------------------------
 1.1 - Updated to compile against iphone 3.0 SDK.  Small bug fix on removeMediator. - BTK
 
