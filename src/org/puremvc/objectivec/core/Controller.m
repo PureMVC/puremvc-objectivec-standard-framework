@@ -10,6 +10,7 @@
 #import "View.h"
 #import "IObserver.h"
 #import "Observer.h"
+#import "ICommand.h"
 
 static id<IController> instance;
 
@@ -85,7 +86,7 @@ static id<IController> instance;
 	if (commandClassRef == nil) {
 		return;
 	}
-	[[[[commandClassRef alloc] init] autorelease] execute:notification];
+	[(id<ICommand>)[[[commandClassRef alloc] init] autorelease] execute:notification];
 }
 
 /**
