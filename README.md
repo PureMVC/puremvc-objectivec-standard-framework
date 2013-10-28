@@ -10,7 +10,7 @@ PureMVC is a lightweight framework for creating applications based upon the clas
 * [Employee Admin](https://github.com/PureMVC/puremvc-objectivec-demo-uikit-employeeadmin/wiki)
 
 ## Status
-Production - [Version 1.1](https://github.com/PureMVC/puremvc-objectivec-standard-framework/blob/master/VERSION)
+Production - [Version 1.2](https://github.com/PureMVC/puremvc-objectivec-standard-framework/blob/master/VERSION)
 
 ## Platforms / Technologies
 * [Objective C](http://en.wikipedia.org/wiki/Objective_c)

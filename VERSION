@@ -3,9 +3,11 @@ PureMVC Standard Framework for ObjectiveC (Ported)
 Release Date: 1/19/09
     Platform: Objective C 
      Version: 1 
-    Revision: 1
+    Revision: 2
       Author: Brian Knorr <brian.knorr@puremvc.org>
 --------------------------------------------------------------------------
+1.2 - Patch to fix compilation warning in Controller.m 
+
 1.1 - Updated to compile against iphone 3.0 SDK.  Small bug fix on removeMediator. - BTK
 
 1.0 - This is the first major release of the PureMVC Port to ObjectiveC.  It was written to spec and unit tested based on AS3's version 2.0.4, and has been functionally tested on the iphone via the Employee Admin demo and in my company's soon-to-be-released iphone apps.  No functional testing has been conducted yet for mac desktop. - BTK
