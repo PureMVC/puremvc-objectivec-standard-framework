@@ -1,7 +1,7 @@
 ## [PureMVC](http://puremvc.github.com/) Objective C Standard Framework
 PureMVC is a lightweight framework for creating applications based upon the classic [Model-View-Controller](http://en.wikipedia.org/wiki/Model-view-controller) design meta-pattern. This is an Objective C port of the [AS3 reference implementation of the Standard Version](https://github.com/PureMVC/puremvc-as3-standard-framework/wiki). 
 
-* [API Docs](http://darkstar.puremvc.org/content_header.html?url=http://puremvc.org/pages/docs/ObjectiveC/standard/hierarchy.html&desc=PureMVC%20API%20Docs:%20PureMVC%20Standard%20for%20Objective%20C)
+* [API Docs](http://puremvc.org/pages/docs/ObjectiveC/standard/hierarchy.html)
 * [Unit Tests](https://github.com/PureMVC/puremvc-objectivec-standard-unittests/wiki)
 * [Discussion](http://forums.puremvc.org/index.php?board=74.0)
 * [Overview Presentation](http://puremvc.tv/#P100)
